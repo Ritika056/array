@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main() 
+{
+   int z[]={1,2,3,4,5,6,7,8,9,10};
+   int sum=0,i;
+   double avg;
+   for(i=0;i<10;i++)
+   {
+      sum=sum+z[i];
+   }
+   avg=sum/10;
+    printf("the average of all elements of array: %lf", avg);
+    return 0;
+}
