@@ -1,0 +1,20 @@
+#include <stdio.h>
+int main() 
+{
+   int z[10],i=0,sum=0;
+   printf("enter elements of array: ");
+   for(i=0;i<10;i++)
+   {
+       scanf("%d",&z[i]);
+   }
+   for(;;)
+   {
+       if(i<10)
+       {
+         sum=sum+z[i];
+         i=i+2;
+       }
+   }
+   printf("sum of elements: %d ",sum);
+    return 0;
+}
