@@ -5,8 +5,11 @@ int main()
    int sum=0,i;
    for(i=0;i<10;i++)
    {
-      sum=sum+z[i++];
+      if(z[i]%2!=0)
+      {
+            sum=sum+z[i];
+       }
    }
-    printf("the sum of all elements at odd place of array: %d", sum);
+    printf("the sum of all odd elements of array: %d", sum);
     return 0;
 }
